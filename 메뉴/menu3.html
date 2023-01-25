@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            let bodywd = $('body').width();
+            let res = (bodywd - 1200)/2; 
+            let tot = 0;
+            let i =1200- $('header ul').width();
+            i /= 2;
+    
+            if(bodywd <= 1200){
+                tot = i;
+            }else{
+                tot = res + i;
+            }
+            $(' header .sub').css({
+                width:bodywd,
+                left:"-"+(tot)+"px",
+                top:"50px"
+            });
+        
+            $('header ul').hover(
+                function(){
+                    $(this).children('.sub').stop().slideDown(200);
+                },
+                function(){
+                    $(this).children('.sub').stop().slideUp(200);
+                }
+            );
+        });
+    </script>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style: none;}
+        a:link , a:visited{ text-decoration: none; color:#333;}
+        header{
+            width:1200px;
+            height: 100px;
+            margin: auto;
+            border:1px solid #eee;
+            position: relative;
+        }
+        header ul{
+            width:80%;
+            height: 40px;
+            line-height: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            top:50px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        header li{
+            width:25%;
+            height:40px;
+            text-align: center;
+        }
+        header .sub{
+            position: absolute;
+            z-index: 5;
+            border-bottom:2px solid gray;
+            height: 120px;
+            display: none;
+        }
+        .sub .wrap{
+            width:1200px;
+            margin: auto;
+            
+        }
+        .sub .contain{
+            width:80%;
+            margin: auto;
+            display: flex;
+            line-height: 40px;
+        }
+        .wrap dl{
+            width:25%;
+            height: 120px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사업영역</a></li>
+            <li><a href="#">입주정보</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li class="sub">
+                <div class="wrap">
+                    <div class="contain">
+                        <dl>
+                            <dt><a href="#">인사말</a></dt>
+                            <dd><a href="#">조직구성도</a></dd>
+                            <dd><a href="#">오시는길</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">전원주택</a></dt>
+                            <dd><a href="#">도시재생</a></dd>
+                            <dd><a href="#">인테리어</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">입주단지</a></dt>
+                            <dd><a href="#">입주캘린더</a></dd>
+                   
+                        </dl>
+                        <dl>
+                            <dt><a href="#">공지사항</a></dt>
+                            <dd><a href="#">건축상담</a></dd>
+                            <dd><a href="#">홍보자료실</a></dd>
+                        </dl>
+                    </div>
+                    
+                </div>
+               
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

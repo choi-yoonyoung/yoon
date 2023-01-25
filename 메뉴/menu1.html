@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .wrap{
+            width: calc(100% - 200px);
+            height: 950px;
+            /* margin: auto; */ 
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .wrap aside{
+            width: 200px;
+            height: 950px;
+
+        }
+        .wrap main{
+            width: calc(100%  - 200px);
+            height: 950px;
+            background-color: orange;
+        }
+        a:link , a:visited{
+            text-decoration: none;
+            color:#333;
+        }
+        aside ul{
+            width:100%;
+            height: 160px;
+            position: relative;
+            margin-top:100px;
+        }
+        aside li{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        aside li:hover{
+            background-color: coral;
+        }
+        aside .sub{
+            position: absolute;
+            left:200px;
+            top:0;
+            height: 160px;
+            display: none;
+            background-color: coral;
+        }
+        aside dl{
+            width:100%;
+            height: 40px;
+            line-height: 40px;
+            display: flex;
+            flex-wrap:wrap;
+        }
+        aside dt{
+            width:25%;
+            height: 40px;
+        }
+        aside dd{
+            width:25%;
+            height: 40px;
+        }
+        aside .over{
+            background-color: coral;
+        }
+        aside dt:hover, aside dd:hover{
+            background-color: lightblue;
+        }
+    </style>
+    <script>
+$(function(){
+           let subwd = $('.wrap main').width();
+           $('aside .sub').css({
+                width:subwd
+           });
+
+           $('aside ul').hover(
+            function(){
+                $(this).children('.sub').stop().slideDown(200);
+            },
+            function(){
+                $(this).children('.sub').stop().slideUp(200);
+            }
+           );
+
+           $('aside dt , aside dd').hover(
+            function(){
+               let linum =  $(this).parent().index();
+               $('aside li').eq(linum).addClass('over');
+            },
+            function(){
+                let linum =  $(this).parent().index();
+               $('aside li').eq(linum).removeClass('over');
+            }
+            );
+});
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <aside>
+            <h2>logo</h2>
+            <ul>
+                <li><a href="#">인기모음전</a></li>
+                <li><a href="#">베스트상품</a></li>
+                <li><a href="#">업종별샵</a></li>
+                <li><a href="#">인덕션용품</a></li>         
+                <li class="sub">
+                    <dl>
+                        <dt><a href="#">수저모음</a></dt>
+                        <dd><a href="#">도마모음</a></dd>
+                        <dd><a href="#">그릇모음</a></dd>
+                        <dd><a href="#">접시모음</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">주방용품</a></dt>
+                        <dd><a href="#">설비제품</a></dd>
+                        <dd><a href="#">인덕션제품</a></dd>
+                        <dd><a href="#">실리콘제품</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">한식기물</a></dt>
+                        <dd><a href="#">양식기물</a></dd>
+                        <dd><a href="#">일식기물</a></dd>
+                        <dd><a href="#">중식기물</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">냄비/솥</a></dt>
+                        <dd><a href="#">후라이팬/주물</a></dd>
+                        <dd><a href="#">인덕션렌지</a></dd>
+                        <dd><a href="#">기타제품</a></dd>
+                    </dl>                                           
+                </li>
+            </ul>
+        </aside>
+        <main></main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('header li').hover(
+                function(){
+                    $(this).children('dl').slideDown(200);
+                },
+                function(){
+                    $(this).children('dl').slideUp(200);
+                }
+            );
+        });
+    </script>
+    <style>
+        *{margin:0;padding: 0;}
+        ul{list-style: none;}
+        a:link ,a:visited{text-decoration: none;color:#333;}
+        header{
+            width: 1200px;
+            height: 100px;
+            margin: auto;
+            position: relative;
+        }
+        header nav{
+            width: 80%;
+            height: 50px;
+            position: absolute;
+            left:50%;
+            transform: translate(-50%);
+            top:50px;
+            border:1px solid #eee;
+        }
+        header ul{width:100%;height: 50px;display: flex;}
+        header li{width:25%;height: 50px; text-align: center;line-height: 50px;
+        position: relative;}
+        header dl{
+            width:100%;
+            position: absolute;
+            top:50px;
+            z-index:4;
+            display: none;
+        }
+        header dt , header dd{
+            width:100%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">강원천문대</a>
+                    <dl>
+                        <dt><a href="#">천문대소개</a></dt>
+                        <dd><a href="#">인사말</a></dd>
+                        <dd><a href="#">오시는길</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="#">이용안내</a>
+                    <dl>
+                        <dt><a href="#">프로그램</a></dt>
+                        <dd><a href="#">관람시간표</a></dd>
+                        <dd><a href="#">이달의 별자리</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="#">천문대예약</a>
+                    <dl>
+                        <dt><a href="#">예약하기</a></dt>
+                        <dd><a href="#">예약확인</a></dd>
+                        <dd><a href="#">예약취소</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <dl>
+                        <dt><a href="#">공지사항</a></dt>
+                        <dd><a href="#">방문후기</a></dd>
+                        <dd><a href="#">자유게시판</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

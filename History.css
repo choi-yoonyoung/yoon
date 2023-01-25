@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ul , a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.header{
+    width: 100%;
+    height: 780px;
+    min-width: 1000px;
+    background: url(./img/Untitled-1.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.home{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 32px;
+    left: 70px;
+    z-index: 2;
+}
+.home img{
+    width: 30px;
+    height: 30px;
+}
+
+.nav{
+    width: 93%;
+    height: 50px;
+    position: relative;
+}
+.nav ul{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 29%;
+}
+.nav li{
+    font-family: 'Cormorant SC', serif;
+    font-size: 23px;
+    text-align: center;
+}
+.nav li a{
+    color: white;
+    font-weight: bold;
+}
+.nav li:nth-child(1) a{
+    color: rgb(212, 133, 255);
+    font-weight: bold;
+}
+.nav li a:hover{
+    color: rgb(212, 133, 255);
+}
+
+.main{
+    width: 595px;
+    height: 306px;
+    position: absolute;
+    top: 165px;
+    left: 165px;
+}
+.main ul{
+    width: 595px;
+    height: 306px;
+}
+.main img{
+    width: 216px;
+    height: 306px;
+    position: relative;
+    float: left;
+}
+.main li{
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: white;
+    position: relative;
+    left: 50px;
+    top:110px;
+}
+.main li:nth-child(2){
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 37px;
+}
+.main li:nth-child(3){
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.ability{
+    width: 490px;
+    height: 240px;
+    position: relative;
+    top: 0;
+    left: 760px;
+    margin: 80px 0;
+}
+.ability ul{
+    width: 490px;
+    height: 320px;
+    align-items: center;
+    background-color: rgb(227, 197, 255);
+    border-radius: 50px;
+}
+.ability li{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(56, 29, 82);
+    font-family: 'Poor Story', cursive;
+    letter-spacing: 3px;
+    line-height: 24px;
+    position: relative;
+    top: 2px;
+}
+.ability li dt{
+    padding-top: 20px;
+    font-weight: 600;
+}
+.ability li dd{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tool{
+    width: 305px;
+    height: 86px;
+    position: relative;
+    top: 70px;
+    left: 200px;
+}
+.tool ul{
+    width:305px;
+    height: 85px;
+    margin-top: 100px;
+    position: relative;
+}
+.tool li{
+    position: relative;
+    float: left;
+    font-family: 'Poor Story', cursive;
+}
+.tool li:nth-child(1){
+    font-size: 27px;
+    font-weight: bold;
+    text-align: ;
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 125px;
+    
+}
+.tool li:nth-child(2) img{
+    position: relative;
+    top: 45px;
+}
+.tool li:nth-child(3) img{
+    position: relative;
+    top: 45px;
+}
+.tool li:nth-child(4) img{
+    position: relative;
+    top: 45px;
+}
+.tool li:nth-child(5) img{
+    width: 37px;
+    position: relative;
+    top: 45px;
+}
+.tool li:nth-child(6) img{
+    width: 37px;
+    position: relative;
+    top: 45px;
+    padding-right: 0;
+}
+.tool li img{
+    width: 50px;
+    padding-right: 20px;
+}
+
+.cer{
+    width: 250px;
+    height: 110px;
+    position: relative;
+    top: 0;
+    left: 900px;
+}
+.cer ul{
+    width: 250px;
+    height: 110px;
+}
+.cer li{
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: white;
+}
+.cer li:nth-child(1){
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    left: 0;
+    bottom: 10px;
+}
