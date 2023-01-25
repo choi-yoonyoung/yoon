@@ -4,33 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>Choi yoonyoung PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="history.html">
-    <link rel="stylesheet" href="web.html">
-    <link rel="stylesheet" href="logo.html">
-    <link rel="stylesheet" href="package.html">
-    <link rel="stylesheet" href="etc.html">
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="package.css">
+    <link rel="stylesheet" href="etc.css">
+
+
+    <script src="gsap.min.js" defer></script>
+    <script>
+        window.onload=function(){
+const tl = gsap.timeline({
+  Delay:0.5,
+  defaults: { duration: 0.6, ease: "power2.inOut" }
+});
+setTimeout(function(){
+  tl.pause();
+},1680);
+
+setTimeout(function(){
+  document.querySelector('.txt1').style.opacity=1;
+  document.querySelector('.txt2').style.opacity=1;
+},1500);
+
+gsap.set("#target1", { rotation: 45, svgOrigin: "50 50" });
+gsap.set("#target2", { rotation: 135, svgOrigin: "50 50" });
+tl.to("line", { attr: { x2: 100 } });
+tl.to("#target1", { rotation: 0 }, "turn");
+tl.to("#target2", { rotation: 180 }, "turn");
+tl.to("#target1", { y: -14 }, "move");
+tl.to("#target2", { y: 21 }, "move");
+tl.to("#theSquare", { attr: { height: 30, y: 38 } }, "move");
+tl.to("line", { attr: { x1: 50, x2: 50 } });
+tl.to("text", { duration: 1, opacity: 1, ease: "none" });
+        }
+    </script>
+    <style>
+      #view{
+        margin: auto;
+        position: relative;
+        top: 80px;
+        display: block;
+        min-width: 800px;
+      }
+      .txt1 , .txt2{
+        font-family: 'Quattrocento', serif;
+        text-align: center;
+        opacity: 0;
+      }
+      .txt2{
+        letter-spacing: 4px;
+      }
+    </style>
 </head>
 <body>
-    <div class="header"></div>
-    <div class="home">
-        <a href="/yoon/inbex.html">
-            <img src="./img/home.png" alt="home">
-        </a>
-    </div>
-    <div class="nav">
-        <ul>
-            <li><a href="/yoon/history.html">History</a></li>
-            <li><a href="/yoon/web.html">Web</a></li>
-            <li><a href="/yoon/logo.html">Logo</a></li>
-            <li><a href="/yoon/package.html">Package</a></li>
-            <li><a href="/yoon/etc.html">Etc</a></li>
+    <div class="background"></div>
+    <div class="header">
+        <ul class="menu">
+            <li class="home"><a href="#"></a></li>
+            <li class="history"><a href="#">History</a></li>
+            <li class="web"><a href="#">Web</a></li>
+            <li class="logo"><a href="#">Logo</a></li>
+            <li class="package"><a href="#">Package</a></li>
+            <li class="etc"><a href="#">Etc</a></li>
         </ul>
     </div>
-    <div class="main">
-        <h4>Choi Yoonyoung</h4>
-        <h2>PORTFOLIO</h2>
+    <div class="body">
+        <svg id="view" xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 100 100">
+            <defs>
+              <clipPath id="theClipPath">
+                <rect id="theSquare" x="0" y="50" width="100" height="0" fill="#5e3315" />
+              </clipPath>
+            </defs>
+            <line id="target1" x1="0" y1="50" x2="0" y2="50" stroke-width="0.7" stroke="#5e3315" />
+            <line id="target2" x1="0" y1="50" x2="0" y2="50" stroke-width="0.7" stroke="#5e3315" />
+            <g id="clipPathReveal" clip-path="url(#theClipPath)">
+              <text transform="translate(50 50)" text-anchor="middle" font-size="10" fill="#5e3315" class="txt1">Choi yoouyoung</text>
+              <text transform="translate(53 63)" text-anchor="middle" font-size="10" fill="#5e3315" class="txt2">PORTFOLIO</text>
+            </g>
+          </svg>
     </div>
 </body>
 </html>
