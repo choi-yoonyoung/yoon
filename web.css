@@ -46,8 +46,11 @@ a:link , a:visited , li{
 .menu li a:hover{
     color: #5e3315;
 }
-.menu .web{
+.menu .web a:hover{
     color: #5e3315;
+}
+.menu .home{
+    margin-top: 5px;
 }
 
 .web_body{

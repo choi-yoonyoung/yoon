@@ -45,8 +45,11 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
-.menu .history{
+.menu .history a:hover{
     color: #5e3315;
+}
+.menu .home{
+    margin-top: 5px;
 }
 
 .history_body{

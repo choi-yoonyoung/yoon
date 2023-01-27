@@ -45,8 +45,11 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
-.menu .package{
+.menu .package a:hover{
     color: #5e3315;
+}
+.menu .home{
+    margin-top: 5px;
 }
 
 .package_body{

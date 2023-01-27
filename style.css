@@ -45,6 +45,9 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
+.menu .home{
+    margin-top: 5px;
+}
 
 .main_body{
     width: 100%;
