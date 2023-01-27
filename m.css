@@ -1,0 +1,35 @@
+
+.header .menu{
+    width: 100%;
+    padding-right: 850px;
+}
+.history_body{
+    max-width: 100%;
+    padding-top: 60px;
+}
+.history_body .left{
+    width: 100%;
+}
+.history_body .right{
+    width: 100%;
+}
+.history_body .left li img{
+    width: 30%;
+}
+.bottom .bottom_left{
+    width: 50%;
+    display: contents;
+}
+.bottom .bottom_right{
+    width: 50%;
+    display: contents;
+}
+.bottom .bottom_right li:first-child{
+    padding-top: 25px;
+}
+.bottom .bottom_right img{
+    width: 5%;
+}
+.right hr{
+    width: 53%;
+}
