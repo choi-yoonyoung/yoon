@@ -45,6 +45,9 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
+.menu .package{
+    color: #5e3315;
+}
 
 .package_body{
     width: 100%;

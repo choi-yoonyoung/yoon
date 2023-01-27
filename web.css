@@ -46,6 +46,9 @@ a:link , a:visited , li{
 .menu li a:hover{
     color: #5e3315;
 }
+.menu .web{
+    color: #5e3315;
+}
 
 .web_body{
     width: 100%;

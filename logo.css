@@ -45,6 +45,9 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
+.menu .logo{
+    color: #5e3315;
+}
 
 .logo_body{
     width: 100%;

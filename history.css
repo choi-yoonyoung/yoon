@@ -45,6 +45,9 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
+.menu .history{
+    color: #5e3315;
+}
 
 .history_body{
     width: 80%;
