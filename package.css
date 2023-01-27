@@ -45,7 +45,7 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
-.menu .home{
+.menu .home a{
     width: 30px;
     height: 30px;
     background: url(./img/home.svg) no-repeat;
