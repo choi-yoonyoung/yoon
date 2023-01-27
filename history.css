@@ -11,10 +11,10 @@ a:link , a:visited , li{
     text-decoration: none;
 }
 
-.header li:nth-child(1) a{
+/* .menu li:nth-child(1) a{
     color: #5e3315;
-}
-.header li a:hover{
+} */
+.menu li a:hover{
     color: #5e3315;
 }
 
