@@ -45,16 +45,6 @@ body{
 .menu li a:hover{
     color: #5e3315;
 }
-.menu .home a{
-    width: 30px;
-    height: 30px;
-    background: url(./img/home.svg) no-repeat;
-    background-size: 30px;
-    position: relative;
-    top: 0;
-    left: 50px;
-    cursor: pointer;
-}
 
 .package_body{
     width: 100%;
