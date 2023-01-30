@@ -11,13 +11,12 @@ a:link , a:visited , li{
     text-decoration: none;
 }
 
-/* .menu li:nth-child(1) a{
-    color: #5e3315;
-} */
+.menu li a{
+    color: white;
+}
 .menu li a:hover{
     color: #5e3315;
 }
-
 
 .history_body{
     width: 80%;
@@ -84,7 +83,7 @@ a:link , a:visited , li{
     position: relative;
     top: 30px;
 }
-.right .edu li:first-child{
+.right .edu li:nth-child(1){
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -94,8 +93,9 @@ a:link , a:visited , li{
     width: 100%;
     height: 210px;
     position: relative;
+    top: 35px;
 }
-.right .exp li:first-child{
+.right .exp li:nth-child(1){
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 5px;
@@ -110,7 +110,7 @@ a:link , a:visited , li{
     width: 45%;
     float: left;
 }
-.bottom .bottom_left li:first-child{
+.bottom .bottom_left li:nth-child(1){
     font-size: 21px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -119,7 +119,7 @@ a:link , a:visited , li{
     width: 45%;
     float: right;
 }
-.bottom .bottom_right li:first-child{
+.bottom .bottom_right li:nth-child(1){
     font-size: 25px;
     font-weight: bold;
 }
