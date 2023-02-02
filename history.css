@@ -39,6 +39,8 @@ a:link , a:visited , li{
 }
 .history_body .left img{
     width: 80%;
+    border-radius: 50px;
+    border: 7px solid rgb(0, 113, 119);
 }
 .left .poto_bottom{
     width: 250px;
