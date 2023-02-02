@@ -15,6 +15,9 @@ a:link , a:visited , li{
 .menu li a{
     color: white;
 }
+.menu .Package a{
+    color: #5e3315;
+}
 .menu li a:hover{
     color: #5e3315;
 }
