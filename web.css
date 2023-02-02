@@ -18,3 +18,9 @@ a:link , a:visited , li{
 .menu li a:hover{
     color: #5e3315;
 }
+.web_body li{
+    padding: 43px 0 0 80px;
+}
+.web_body img{
+    width: 550px;
+}
