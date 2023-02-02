@@ -111,9 +111,6 @@ a , li{
     width: 30px;
     height: 70px;
     overflow: hidden;
-    position: absolute;
-    top: 485px;
-    left: 25px;
 }
 .banner li:nth-child(2) img{
     width: 70px;
@@ -220,4 +217,109 @@ a , li{
     font-size: 45px;
     font-weight: bold;
     padding: 110px 0 0 10px;
+}
+.banner2 .icon2{
+    width: 120px;
+    height: 20px;
+    float: right;
+    position: relative;
+    right: 5px;
+    bottom: 26px;
+}
+.icon2 li{
+    float: left;
+}
+.icon2 li a{
+    position: relative;
+    top: 0;
+}
+.banner2 .icon2 li img{
+    width: 40px;
+}
+.banner2 .icon2 li:nth-child(1){
+    width:20px;
+    overflow: hidden;
+}
+/* .banner2 .icon2 li:nth-child(1) img{
+    position: relative;
+    top: 0;
+    left: 0;
+} */
+.banner2 .icon2 li:nth-child(2) img{
+    width:65px;
+    height: 65px;
+    position: relative;
+    bottom: 11px;
+    left: 0;
+}
+.banner2 .icon2 li:nth-child(3){
+    width:20px;
+    overflow: hidden;
+}
+.banner2 .icon2 li:nth-child(3) img{
+    position: relative;
+    top: 0;
+    right: 20px;
+}
+
+
+.box3{
+    width: 100%;
+    height: 600px;
+}
+.box3 ul{
+    margin: auto;
+    padding: 50px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box3 li{
+    width: 100%;
+    height: 504px;
+}
+.box3 .txt{
+    width: 315px;
+    height: 80px;
+    position: relative;
+}
+.box3 .txt li{
+    width: 315px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.box3 .txt p:nth-child(1){
+    width: 95px;
+    height: 27px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 4px;
+}
+.box3 .txt p:nth-child(2){
+    width: 65px;
+    height: 27px;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 4px;
+    position: relative;
+    bottom: 31px;
+    left: 100px;
+}
+.box3 .txt a{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 14px;
+    left: 0;
+}
+.box3 .txt p:nth-child(3){
+    font-size: 13px;
+}
+.box3 img{
+    width: 335px;
+    padding: 0 5px 0 5px;
 }
