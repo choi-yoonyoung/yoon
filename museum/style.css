@@ -111,6 +111,9 @@ a , li{
     width: 30px;
     height: 70px;
     overflow: hidden;
+    position: absolute;
+    top: 485px;
+    left: 0;
 }
 .banner li:nth-child(2) img{
     width: 70px;
