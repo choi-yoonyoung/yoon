@@ -134,3 +134,6 @@ a:link , a:visited , li{
 .history_body img{
     width: 500px;
 }
+.history_body li{
+    padding-top: 30px;
+}

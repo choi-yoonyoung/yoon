@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    width: 100%;
+    height: 130px;
+    position: relative;
+    background-color: #e5f5f2;
+}
+.logo{
+    background: url(./img/위드포인츠-로고.png)no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 95px;
+    margin-top: 18px;
+    margin-left: 75px;
+    position: absolute;
+}
+
+.menu {
+    position: absolute;
+    width: 780px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-left: 350px;
+    margin-top: 80px;
+    background-color: #05826c;
+}
+.menu > li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+.menu li a{
+    font-size: 19px;
+    font-weight: bold;
+}
+.menu .submenu a{
+    font-size: 16px;
+    font-weight:500;
+    line-height: 35px;
+}
+.menu a {
+    color: #fff;
+}
+
+.submenu > li {
+    line-height: 30px;
+}
+
+.submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.menu a:hover{
+    color: #05826c;
+}
+.menu > li:hover {
+    background-color: #84aaa3;
+    transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+    height: 125px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+    padding-top: 10px;
+}
+
+.box{
+    width: 140px;
+    /* height: 25px; */
+    float: right;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.icon{
+    width: 30px;
+    height: 25px;
+    margin-left: 6px;
+    margin-top: 4px;
+    position: absolute;
+}
+.icon img{
+    width: 70%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.icon2 img{
+    width: 10%;
+}
+.icon2{
+    width: 115px;
+    height: 0;
+    margin-left: 116px;
+    margin-top: 2px;
+    display: block;
+}
+.lang{
+    position: relative;
+    bottom: 1px;
+    left: 2px;
+}
+.lang li{
+    text-align: center;
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 14px;
+}
+.lang li a{
+    color: rgb(123, 123, 123);
+}
+.lang li a:hover{
+    color: #05826c;
+}
+.lang .eng{
+    height: 0;
+    overflow: hidden;
+}
+.lang li:hover{
+    transition-duration: 0.5s;
+}
+.lang li:hover .eng{
+    height: 35px;
+    transition-duration: 1s;
+}
+
+.banner{
+    width: 100%;
+    height: 541px;
+    background: url(./img/background.jpg) no-repeat top;
+    background-size: cover;
+}
+
+.footer{
+    width: 100%;
+    height: 110px;
+    background-color: #05826c;
+    position: absolute;
+    float: left;
+}
+.footer .left{
+    width: 380px;
+    height: 45px;
+    position: relative;
+    top: 22px;
+    left: 60px;
+    float: left;
+}
+.footer .left .bottom_logo{
+    width: 110px;
+    height: 68px;
+    background: url(./img/회색로고.png) no-repeat;
+    background-size: contain;
+    float: left;
+}
+.footer .left li{
+    color: rgb(230, 230, 230);
+    position: relative;
+    top: 4px;
+    left: 25px;
+}
+.footer .left li:nth-child(2){
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.footer .left li:nth-child(3){
+    font-size: 10px;
+}
+.footer .right{
+    width: 800px;
+    height: 45px;
+    padding: 35px 0 0 600px;
+    font-size: 12px;
+    color: rgb(230, 230, 230);
+}
+.right .top{
+    width: 800px;
+    height: 23px;
+}
+.right .top dt{
+    float: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.right .top dd{
+    float: left;
+    padding-right: 50px;
+}
+
+.right .bottom{
+    width: 800px;
+    height: 23px;
+}
+.right .bottom dt{
+    float: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.right .bottom dd{
+    float: left;
+    padding-right: 50px;
+}
