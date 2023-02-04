@@ -10,7 +10,7 @@ a , li{
 }
 
 .header{
-    width: 100%;
+    width: 90%;
     min-width: 1000px;
     height: 50px;
 }
@@ -19,7 +19,7 @@ a , li{
     min-width: 1000px;
     display: flex;
     justify-content: right;
-    align-items: center;
+    margin-left: 12px;
 }
 .header ul:nth-child(1) li{
     padding: 20px 0;
@@ -28,7 +28,7 @@ a , li{
 .header ul:nth-child(1) li a{
     border-top: 3px solid black;
     padding: 7px 10px 0 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 }
 .header ul:nth-child(1) li:nth-child(4) img,
@@ -38,6 +38,9 @@ a , li{
     position: relative;
     top: 3px;
     right: 0;
+}
+.header ul:nth-child(1) li:nth-child(6) a{
+    padding: 7px 7px 0 10px;
 }
 .header ul:nth-child(1) li:nth-child(6) img{
     width: 17px;
@@ -53,16 +56,15 @@ a , li{
 }
 .header ul:nth-child(2) li{
     float: left;
-    padding: 0 7px;
 }
 .header ul:nth-child(2) li a{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
+    padding-right: 11px;
 }
 .header ul:nth-child(2) img{
-    width: 30px;
-    height: 30px;
-    padding-right: 8px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -70,57 +72,49 @@ a , li{
     width: 100%;
     min-width: 1000px;
     height: 110px;
-    margin-top: 50px;
 }
 .main ul{
     display: flex;
     justify-content: left;
 }
 .main li img{
-    width: 200px;
+    width: 170px;
     height: 100px;
-    padding: 10px 30px 0 20px;
+    padding: 0 30px 0 145px;
 }
 .main li:nth-child(2){
-    padding: 55px;
+    padding: 45px 0 0 40px;
 }
 .main li:nth-child(2) a{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 0 20px;
+    padding-right: 10px;
 }
 .banner{
     width: 100%;
     min-width: 1000px;
 }
-/* .banner li a:nth-child(1+7){
-    position: relative;
-    top: 0;
-    left: 0;
-} */
 .banner ul{
-    height: 607px;
+    width: 80%;
+    margin: auto;
 }
 .banner li:nth-child(1) img{
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    width: 1135px;
 }
 .banner li:nth-child(2){
     width: 30px;
     height: 70px;
     overflow: hidden;
     position: absolute;
-    top: 485px;
-    left: 0;
+    top: 375px;
+    left: 160px;
 }
 .banner li:nth-child(2) img{
     width: 70px;
     height: 70px;
     position: relative;
     top: 0;
-    right: 0;
+    left: 0;
 
 }
 .banner li:nth-child(3){
@@ -128,8 +122,8 @@ a , li{
     height: 70px;
     overflow: hidden;
     position: absolute;
-    top: 485px;
-    right: 25px;
+    top: 375px;
+    right: 160px;
 }
 .banner li:nth-child(3) img{
     width: 70px;
@@ -144,9 +138,11 @@ a , li{
     width: 100%;
     height: 130px;
     display: flex;
+    justify-content: center;
+    margin: auto;
 }
 .time ul:nth-child(1){
-    width: 1080px;
+    width: 855px;
     height: 150px;
     border-bottom: 3px solid black;
 }
@@ -156,13 +152,14 @@ a , li{
     padding-top: 10px;
 }
 .time .box li:nth-child(1) img{
-    width: 28px;
+    width: 22px;
     float: left;
-    padding: 30px 0 0 20px;
+    padding-top: 30px;
 }
 .time .box li:nth-child(1) h2{
     float: left;
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: blod;
     letter-spacing: -2px;
     padding: 28px 0 0 10px;
 }
@@ -171,44 +168,43 @@ a , li{
     font-size: 16px;
     text-align: center;
     font-weight: bold;
-    padding: 32px 0 0 20px;
+    padding: 31px 0 0 20px;
 }
 .time .box li:nth-child(2) img{
-    width: 33px;
+    width: 26px;
     float: left;
-    padding: 5px 0 0 20px;
+    padding-top: 5px;
 }
 .time .box li:nth-child(2) h2{
     float: left;
-    font-size: 22px;
+    font-size: 19px;
     letter-spacing: 1px;
     padding: 7px 0 0 10px;
 }
 .time .box li:nth-child(2) p{
     float: left;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
     padding: 11px 0 0 20px;
 }
 .time .box2{
-    width: 330px;
     display: flex;
 }
 .time .box2 li{
     width: 125px;
     height: 65px;
     border-bottom: 3px solid rgb(99, 36, 157);
-    margin:  85px 0 0 10px;
-    padding-left: 10px;
+    margin: 85px 0 0 15px;
 }
 .time .box2 li a:nth-child(1){
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
-    letter-spacing: -3px;
-    text-align: center;
     color: rgb(99, 36, 157);
     float: left;
+    position: relative;
+    top: 5px;
+    left: 8px;
 }
 
 
@@ -216,18 +212,22 @@ a , li{
 .banner2{
     width: 100%;
 }
+.banner2 ul{
+    width: 80%;
+    margin: auto;
+}
 .banner2 li h1{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
-    padding: 110px 0 0 10px;
+    padding-top: 80px;
 }
 .banner2 .icon2{
     width: 120px;
     height: 20px;
     float: right;
     position: relative;
-    right: 5px;
-    bottom: 26px;
+    left: 57px;
+    bottom: 20px;
 }
 .icon2 li{
     float: left;
@@ -237,95 +237,88 @@ a , li{
     top: 0;
 }
 .banner2 .icon2 li img{
-    width: 40px;
+    width: 25px;
 }
 .banner2 .icon2 li:nth-child(1){
-    width:20px;
+    width:12px;
     overflow: hidden;
 }
-/* .banner2 .icon2 li:nth-child(1) img{
+.banner2 .icon2 li:nth-child(1) img{
     position: relative;
     top: 0;
     left: 0;
-} */
+}
 .banner2 .icon2 li:nth-child(2) img{
-    width:65px;
-    height: 65px;
+    width:40px;
+    height: 40px;
     position: relative;
-    bottom: 11px;
+    bottom: 7px;
     left: 0;
 }
 .banner2 .icon2 li:nth-child(3){
-    width:20px;
+    width:12px;
     overflow: hidden;
 }
 .banner2 .icon2 li:nth-child(3) img{
     position: relative;
     top: 0;
-    right: 20px;
+    right: 15px;
 }
 
 
 .box3{
-    width: 100%;
+    width: 80%;
     min-width: 1000px;
-    height: 600px;
+    height: 525px;
+    margin: auto;
 }
 .box3 ul{
+    width: 100%;
+    padding-top: 20px;
     margin: auto;
-    padding: 50px 0 0 20px;
     display: flex;
     justify-content: space-between;
 }
-.box3 li{
-    width: 100%;
-    height: 504px;
-}
-.box3 .txt{
-    width: 315px;
+.box3 .txt li{
+    width: 295px;
     height: 80px;
     position: relative;
-}
-.box3 .txt li{
-    width: 315px;
-    height: 80px;
-    position: absolute;
-    top: 10px;
+    bottom: 10px;
     left: 0;
 }
 .box3 .txt p:nth-child(1){
-    width: 95px;
-    height: 27px;
-    font-size: 16px;
+    width: 70px;
+    height: 22px;
+    font-size: 12px;
     color: white;
     background-color: black;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 6px;
 }
 .box3 .txt p:nth-child(2){
-    width: 65px;
-    height: 27px;
-    font-size: 16px;
+    width: 47px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
     border: 1px solid black;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 6px;
     position: relative;
-    bottom: 31px;
-    left: 100px;
+    bottom: 28px;
+    left: 77px;
 }
 .box3 .txt a{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     position: relative;
     bottom: 14px;
     left: 0;
 }
-.box3 .txt p:nth-child(3){
+.box3 .txt p:nth-child(4){
     font-size: 13px;
 }
 .box3 img{
-    width: 335px;
-    padding: 0 5px 0 5px;
+    width: 250px;
 }
 
 
@@ -333,16 +326,289 @@ a , li{
     width: 100%;
     min-width: 1000px;
 }
+.box4 ul:nth-child(1){
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    padding-top: 80px;
+}
 .box4 li img{
-    width: 50px;
-    position: relative;
-    top: 150px;
-    left:10px;
+    width: 40px;
 }
 .box4 li h1{
-    font-size: 45px;
+    font-size: 35px;
     position: relative;
-    bottom: 20px;
-    left: 60px;
+    bottom: 45px;
+    left: 45px;
     font-weight: bold;
+    padding: 0;
+}
+
+
+
+/* 탭메뉴_알림 */
+
+.tab_menu{
+    width: 600px;
+    height: 350px;
+    margin: 10px 0 0 100px;
+}
+.tab_menu .line{
+    width: 570px;
+    border-bottom: 1px solid gray;
+    position: relative;
+    top: 42px;
+}
+.tab_menu .active{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 3px solid black; 
+}
+.tab_menu .active .btn{
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+    left: 0;
+}
+.active .notice{
+    width: 570px;
+    height: 305px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.active .notice ul{
+    width: 570px;
+    height: 305px;
+    padding-top: 10px;
+}
+.active .notice li{
+    text-align: left;
+    padding-top: 10px;
+}
+.active .notice .note1{
+    width: 400px;
+    height: 27px;
+    list-style-type: disc;
+    position: relative;
+    top: 0;
+    left: 30px;
+    padding-top: 18px;
+}
+.active .notice .note1 a{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.active .notice .note1 a:hover{
+    text-decoration: underline;
+}
+.active .notice .note2{
+    font-size: 14px;
+    position: relative;
+    right: 20px;
+    bottom: 35px;
+    float: right;
+    line-height: 19px;
+}
+
+
+
+/* 탭메뉴_공시/공고 */
+
+.tab_menu .active2{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 3px solid black; 
+    position: relative;
+    bottom: 43px;
+    left: 110px;
+}
+.tab_menu .active2 .btn2{
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+    left: 0;
+}
+.active2 .notice{
+    width: 570px;
+    height: 305px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    right: 120px;
+    overflow: hidden;
+}
+
+.active2 .notice ul{
+    width: 570px;
+    height: 305px;
+    padding-top: 10px;
+}
+.active2 .notice li{
+    text-align: left;
+    padding-top: 10px;
+}
+.active2 .notice .note1{
+    width: 400px;
+    height: 27px;
+    list-style-type: disc;
+    position: relative;
+    top: 0;
+    left: 30px;
+    padding-top: 18px;
+}
+.active2 .notice .note1 a{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.active2 .notice .note1 a:hover{
+    text-decoration: underline;
+}
+.active2 .notice .note2{
+    font-size: 14px;
+    position: relative;
+    right: 0;
+    bottom: 35px;
+    float: right;
+    line-height: 19px;
+}
+
+
+/* 탭메뉴_채용 안내 */
+
+.tab_menu .active3{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 3px solid black; 
+    position: relative;
+    bottom: 86px;
+    left: 220px;
+}
+.tab_menu .active3 .btn3{
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+    left: 0;
+}
+.active3 .notice{
+    width: 570px;
+    height: 305px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    right: 230px;
+    overflow: hidden;
+}
+
+.active3 .notice ul{
+    width: 570px;
+    height: 305px;
+    padding-top: 10px;
+}
+.active3 .notice li{
+    text-align: left;
+    padding-top: 10px;
+}
+.active3 .notice .note1{
+    width: 400px;
+    height: 27px;
+    list-style-type: disc;
+    position: relative;
+    top: 0;
+    left: 30px;
+    padding-top: 18px;
+}
+.active3 .notice .note1 a{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.active3 .notice .note1 a:hover{
+    text-decoration: underline;
+}
+.active3 .notice .note2{
+    font-size: 14px;
+    position: relative;
+    right: 0;
+    bottom: 35px;
+    float: right;
+    line-height: 19px;
+}
+
+
+/* 탭메뉴_채용 안내 */
+
+.tab_menu .active4{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 3px solid black; 
+    position: relative;
+    bottom: 129px;
+    left: 330px;
+}
+.tab_menu .active4 .btn4{
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+    left: 0;
+}
+.active4 .notice{
+    width: 584px;
+    height: 305px;
+    background-color: yellow;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    right: 340px;
+    overflow: hidden;
+}
+
+.active4 .notice ul{
+    width: 570px;
+    height: 305px;
+    padding-top: 10px;
+}
+.active4 .notice li{
+    text-align: left;
+    padding-top: 10px;
+}
+.active4 .notice .note1{
+    width: 400px;
+    height: 27px;
+    list-style-type: disc;
+    position: relative;
+    top: 0;
+    left: 30px;
+    padding-top: 18px;
+}
+.active4 .notice .note1 a{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.active4 .notice .note1 a:hover{
+    text-decoration: underline;
+}
+.active4 .notice .note2{
+    font-size: 14px;
+    position: relative;
+    right: 0;
+    bottom: 35px;
+    float: right;
+    line-height: 19px;
 }
