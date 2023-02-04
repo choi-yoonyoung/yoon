@@ -17,6 +17,7 @@ a , li{
 .header ul:nth-child(1){
     width: 100%;
     min-width: 1000px;
+    height: 62px;
     display: flex;
     justify-content: right;
     margin-left: 12px;
@@ -212,7 +213,7 @@ a , li{
 .banner2{
     width: 100%;
 }
-.banner2 ul{
+.banner2 .txt1{
     width: 80%;
     margin: auto;
 }
@@ -323,13 +324,13 @@ a , li{
 
 
 .box4{
-    width: 100%;
-    min-width: 1000px;
-}
-.box4 ul:nth-child(1){
     width: 80%;
-    height: 70px;
+    height: 570px;
     margin: auto;
+}
+.box4 .sub{
+    width: 100%;
+    height: 45px;
     padding-top: 80px;
 }
 .box4 li img{
@@ -345,13 +346,15 @@ a , li{
 }
 
 
-
 /* 탭메뉴_알림 */
 
-.tab_menu{
-    width: 600px;
-    height: 350px;
-    margin: 10px 0 0 100px;
+.box4 .tab_menu{
+    width: 50%;
+    height: 43px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    float: left;
 }
 .tab_menu .line{
     width: 570px;
@@ -372,25 +375,25 @@ a , li{
     top: 7px;
     left: 0;
 }
-.active .notice{
+.tab_menu .active .notice{
     width: 570px;
     height: 305px;
     border-bottom: 1px solid gray;
-    margin-top: 20px;
+    margin-top: 17px;
     background-color: white;
 
 }
 
-.active .notice ul{
+.tab_menu .active .notice ul{
     width: 570px;
     height: 305px;
     padding-top: 10px;
 }
-.active .notice li{
+.tab_menu .active .notice li{
     text-align: left;
     padding-top: 10px;
 }
-.active .notice .note1{
+.tab_menu .active .notice .note1{
     width: 400px;
     height: 27px;
     list-style-type: disc;
@@ -399,15 +402,15 @@ a , li{
     left: 30px;
     padding-top: 18px;
 }
-.active .notice .note1 a{
+.tab_menu .active .notice .note1 a{
     font-size: 14px;
     font-weight: bold;
     padding-left: 5px;
 }
-.active .notice .note1 a:hover{
+.tab_menu .active .notice .note1 a:hover{
     text-decoration: underline;
 }
-.active .notice .note2{
+.tab_menu .active .notice .note2{
     font-size: 14px;
     position: relative;
     right: 20px;
@@ -417,198 +420,22 @@ a , li{
 }
 
 
-
-/* 탭메뉴_공시/공고 */
-
-.tab_menu .active2{
-    width: 110px;
-    height: 40px;
-    text-align: center;
-    border-bottom: 3px solid black; 
+.bottom_img{
+    width: 50%;
+    height: 45px;
     position: relative;
-    bottom: 43px;
-    left: 110px;
-}
-.tab_menu .active2 .btn2{
-    font-size: 19px;
-    font-weight: bold;
-    position: relative;
-    top: 7px;
+    top: 0;
     left: 0;
+    float: left;
 }
-.active2 .notice{
-    width: 570px;
-    height: 305px;
-    border-bottom: 1px solid gray;
-    margin-top: 20px;
+/* .bottom_img li{
+    width: 100%;
+    height: 326px;
+} */
+.box4 .bottom_img img{
+    width: 90%;
+    height: 351px;
     position: relative;
-    top: 0;
-    right: 120px;
-    overflow: hidden;
-}
-
-.active2 .notice ul{
-    width: 570px;
-    height: 305px;
-    padding-top: 10px;
-}
-.active2 .notice li{
-    text-align: left;
-    padding-top: 10px;
-}
-.active2 .notice .note1{
-    width: 400px;
-    height: 27px;
-    list-style-type: disc;
-    position: relative;
-    top: 0;
-    left: 30px;
-    padding-top: 18px;
-}
-.active2 .notice .note1 a{
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 5px;
-}
-.active2 .notice .note1 a:hover{
-    text-decoration: underline;
-}
-.active2 .notice .note2{
-    font-size: 14px;
-    position: relative;
-    right: 0;
-    bottom: 35px;
-    float: right;
-    line-height: 19px;
-}
-
-
-/* 탭메뉴_채용 안내 */
-
-.tab_menu .active3{
-    width: 110px;
-    height: 40px;
-    text-align: center;
-    border-bottom: 3px solid black; 
-    position: relative;
-    bottom: 86px;
-    left: 220px;
-}
-.tab_menu .active3 .btn3{
-    font-size: 19px;
-    font-weight: bold;
-    position: relative;
-    top: 7px;
-    left: 0;
-}
-.active3 .notice{
-    width: 570px;
-    height: 305px;
-    border-bottom: 1px solid gray;
-    margin-top: 20px;
-    position: relative;
-    top: 0;
-    right: 230px;
-    overflow: hidden;
-}
-
-.active3 .notice ul{
-    width: 570px;
-    height: 305px;
-    padding-top: 10px;
-}
-.active3 .notice li{
-    text-align: left;
-    padding-top: 10px;
-}
-.active3 .notice .note1{
-    width: 400px;
-    height: 27px;
-    list-style-type: disc;
-    position: relative;
-    top: 0;
-    left: 30px;
-    padding-top: 18px;
-}
-.active3 .notice .note1 a{
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 5px;
-}
-.active3 .notice .note1 a:hover{
-    text-decoration: underline;
-}
-.active3 .notice .note2{
-    font-size: 14px;
-    position: relative;
-    right: 0;
-    bottom: 35px;
-    float: right;
-    line-height: 19px;
-}
-
-
-/* 탭메뉴_채용 안내 */
-
-.tab_menu .active4{
-    width: 110px;
-    height: 40px;
-    text-align: center;
-    border-bottom: 3px solid black; 
-    position: relative;
-    bottom: 129px;
-    left: 330px;
-}
-.tab_menu .active4 .btn4{
-    font-size: 19px;
-    font-weight: bold;
-    position: relative;
-    top: 7px;
-    left: 0;
-}
-.active4 .notice{
-    width: 584px;
-    height: 305px;
-    background-color: yellow;
-    border-bottom: 1px solid gray;
-    margin-top: 20px;
-    position: relative;
-    top: 0;
-    right: 340px;
-    overflow: hidden;
-}
-
-.active4 .notice ul{
-    width: 570px;
-    height: 305px;
-    padding-top: 10px;
-}
-.active4 .notice li{
-    text-align: left;
-    padding-top: 10px;
-}
-.active4 .notice .note1{
-    width: 400px;
-    height: 27px;
-    list-style-type: disc;
-    position: relative;
-    top: 0;
-    left: 30px;
-    padding-top: 18px;
-}
-.active4 .notice .note1 a{
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 5px;
-}
-.active4 .notice .note1 a:hover{
-    text-decoration: underline;
-}
-.active4 .notice .note2{
-    font-size: 14px;
-    position: relative;
-    right: 0;
-    bottom: 35px;
-    float: right;
-    line-height: 19px;
+    top: 19px;
+    left: 58px;
 }
