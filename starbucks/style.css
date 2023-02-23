@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a , li{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+
+.header{
+    width: 100%;
+    height: 117px;
+    background-color: rgb(251, 246, 239);
+    border-top: 2px solid black;
+    border-bottom: 1px solid rgb(224, 222, 222);
+    /* position: fixed; */
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+    background: url(./img/logo.png) no-repeat;
+    background-size: 75px;
+    position: relative;
+    top: 20px;
+    left: 160px;
+}
+
+.menu{
+    width: 60%;
+    position: relative;
+    bottom: 80px;
+    left: 375px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.menu .top{
+    width: 100%;
+    height: 50px;
+}
+.menu .top ul{
+    position: relative;
+    top: 20px;
+    left: 330px;
+}
+.menu .top li:hover{
+    text-decoration: underline;
+}
+.menu .top li:nth-child(1),
+.menu .top li:nth-child(2),
+.menu .top li:nth-child(3){
+    height: 13px;
+    font-size: 13px;
+    float: left;
+    padding: 0 15px 0 15px;
+    border-right: 1px solid rgb(202, 202, 202);
+}
+.menu .top li:nth-child(4){
+    font-size: 14px;
+    float: left;
+    padding: 0 15px 0 15px;
+}
+.menu .top li:nth-child(5){
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative;
+    bottom: 6px;
+    left: 0;
+    background-color: white;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu .top img{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+
+.nav{
+    width: 890px;
+    height: 60px;
+    border: 1px solid rgb(0, 26, 255);
+    position: relative;
+    bottom: 70px;
+    left: 360px;
+}
+.nav li{
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+.nav li:nth-child(1),
+.nav li:nth-child(2),
+.nav li:nth-child(3){
+    width: 85px;
+    height: 49px;
+    border: 1px solid salmon;
+}
+.nav li:nth-child(4){
+    width: 145px;
+    height: 49px;
+    border: 1px solid salmon;
+}
+.nav li:nth-child(5){
+    width: 186px;
+    height: 49px;
+    border: 1px solid salmon;
+}
+.nav li:nth-child(6){
+    width: 155px;
+    height: 49px;
+    border: 1px solid salmon;
+}
+.nav li:nth-child(7){
+    width: 135px;
+    height: 49px;
+    border: 1px solid salmon;
+}
+.nav li:nth-child(1):hover,
+.nav li:nth-child(2):hover,
+.nav li:nth-child(3):hover,
+.nav li:nth-child(4):hover,
+.nav li:nth-child(5):hover,
+.nav li:nth-child(6):hover,
+.nav li:nth-child(7):hover{
+    background-color: rgb(52, 52, 52);
+    cursor: pointer;
+}
+.nav a{
+    font-size: 13px;
+}
+.nav a:hover{
+    color: rgb(1, 162, 1);
+    text-decoration: underline;
+}
+.nav .sub{
+    width: 1415px;
+    height: 250px;
+    background-color: rgb(52, 52, 52);
+    float: left;
+    position: relative;
+    top: 0;
+    right: 365px;
+}
+.nav .sub .wrap{
+    width: 1070px;
+    height: 250px;
+    margin: auto;
+    padding-top: 30px;
+}
+.nav .sub .contain{
+    width: 900px;
+    height: 250px;
+    margin: auto;
+}
+.nav .sub .contain dl{
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    padding: 0 10px 30px 30px;
+}
+.nav .sub .contain dt{
+    line-height: 30px;
+}
+.nav .sub .contain dt a{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(200, 201, 200);
+}
+.nav .sub .contain dd a{
+    color: rgb(127, 128, 127);
+    line-height: 20px;
+}
