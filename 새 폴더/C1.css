@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main ul{
+    width: 100%;
+}
+.main li img{
+    width: 70%;
+    margin-left: 270px;
+    margin-top: 70px;
+}

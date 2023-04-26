@@ -125,9 +125,14 @@ a:link , a:visited , li{
     width: 45%;
     float: right;
 }
-.bottom .bottom_right li:nth-child(1){
+/* .bottom .bottom_right li:nth-child(1){
     font-size: 25px;
     font-weight: bold;
+} */
+.bottom .bottom_right li:nth-child(1){
+    font-size: 21px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 .bottom .bottom_right img{
     width: 13%;
